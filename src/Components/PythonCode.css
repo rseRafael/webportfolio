@@ -1,0 +1,35 @@
+.pythoncode-main-div{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 5%;
+
+    background-color: #2f2f2f;
+}
+
+.pythoncode-code-line{
+    padding: 0px;
+    font-family: MontSerrat,Tahoma,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #cacaca;
+}
+.pythoncode-code-div{
+
+    width: 99%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-left: 5%;
+    border-left:1px solid white;
+
+    
+}

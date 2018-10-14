@@ -1,0 +1,18 @@
+.dynamic-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    opacity: 0.5;
+}
+
+.dynamic-text{
+    font-size: 100%;
+    color:white;
+    font-weight: 800;
+    border-right: 1px solid white;
+    padding-right: 0.5%;
+}
