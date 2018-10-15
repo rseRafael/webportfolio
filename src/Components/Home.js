@@ -1,9 +1,32 @@
 import React, { Component } from 'react';
 import './Home.css';
+import CodeWriter from './CodeWriter';
+import myCode from '../Utils/Codes';
 
 export default class Home extends Component {
   constructor(props){
       super(props);
+      this['python-button'] = (
+        <div 
+          className={'home-icon-button-div'}>
+          <i className="fab fa-python home-icon"></i>
+          <p
+          className={"home-icon-title"}>
+            {'Python'}
+          </p>
+        </div>
+      );
+      this['python-code'] = (
+        <CodeWriter code={myCode} />
+      )
+      this.state= {
+        python: this['python-button'],
+      }
+  }
+  changePython(){
+    this.setState({
+      python: this['python-code'],
+    })
   }
   render() {
     return (
@@ -19,27 +42,48 @@ export default class Home extends Component {
               className="home-main-frameworks">
               <p
                className="home-styled-paragraph">
-                
+                {`Django`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`Expressjs`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`Nodejs`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`SQL`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`PostgreSQL`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`MongoDB`}
               </p>
             </div>
             <div
              className={"home-main-skills-row"}>
               <div
                 className={'home-icon-button-main'}
-                onClick={()=>{console.log('Hello, world')}}>
-                  <i className="fab fa-python home-icon"></i>
-                  <p
-                  className={"home-icon-title"}>
-                    {'Python'}
-                  </p>
+                onClick={()=>{this.changePython()}}>
+                  {
+                    this.state.python
+                  }
               </div>
               <div
               className={'home-icon-button-main'}>
-                <i className="fab fa-node-js home-icon"></i>
-                <p
-                  className={"home-icon-title"}>
-                    {'Javascript'}
+                <div
+                 className={'home-icon-button-div'}>
+                  <i className="fab fa-node-js home-icon"></i>
+                  <p
+                    className={"home-icon-title"}>
+                      {'Javascript'}
                   </p>
+                </div>
               </div>
             </div>
            

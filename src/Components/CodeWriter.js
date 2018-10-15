@@ -23,13 +23,11 @@ export default class CodeWriter extends Component{
                     this.setState({
                         underLine: '',
                     });
-                    console.log(`No: ${this.state.underLine}`);
                 }
                 else{
                     this.setState({
                         underLine: '  |',
                     });
-                    console.log(`Yes: ${this.state.underLine}`);
                 }
             },
             300

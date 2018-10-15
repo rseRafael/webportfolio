@@ -55,17 +55,17 @@ export default class Slider extends Component{
             <div
              className={ "slider-main-div" }>
                 <div
-                 className={ "slider-left-button" }>
+                 className={ "slider-left-button" }
+                 onClick={ ()=>{ this.leftButton() } }>
                     <i 
-                     className={ "fas fa-arrow-left slider-arrow-icon" }
-                     onClick={ ()=>{ this.leftButton() } }>
+                     className={ "fas fa-arrow-left slider-arrow-icon" }>
                     </i>
                 </div>
                 <div
-                 className={"slider-right-button"}>
+                 className={"slider-right-button"}
+                 onClick={ ()=>{ this.rightButton() } }>
                     <i 
-                     className={ "fas fa-arrow-right slider-arrow-icon" }
-                     onClick={ ()=>{ this.rightButton() } }>
+                     className={ "fas fa-arrow-right slider-arrow-icon" }>
                     </i>
                 </div>
                 <div
