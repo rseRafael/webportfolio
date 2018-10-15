@@ -10,24 +10,39 @@ export default class Home extends Component {
       <div 
        className="home-main">
         <div
-          className='home-main-row'>
+          className='home-main-skills'>
+            <h4
+             className="home-header">
+              Main Back-End Skills
+            </h4>
             <div
-              className={'home-icon-button'}
-              onClick={()=>{console.log('Hello, world')}}>
-                <i className="fab fa-python home-icon"></i>
+              className="home-main-frameworks">
+              <p
+               className="home-styled-paragraph">
+                
+              </p>
+            </div>
+            <div
+             className={"home-main-skills-row"}>
+              <div
+                className={'home-icon-button-main'}
+                onClick={()=>{console.log('Hello, world')}}>
+                  <i className="fab fa-python home-icon"></i>
+                  <p
+                  className={"home-icon-title"}>
+                    {'Python'}
+                  </p>
+              </div>
+              <div
+              className={'home-icon-button-main'}>
+                <i className="fab fa-node-js home-icon"></i>
                 <p
-                 className={"home-icon-title"}>
-                  {'Python'}
-                </p>
+                  className={"home-icon-title"}>
+                    {'Javascript'}
+                  </p>
+              </div>
             </div>
-            <div
-             className={'home-icon-button'}>
-               <i className="fab fa-node-js home-icon"></i>
-               <p
-                 className={"home-icon-title"}>
-                  {'Javascript'}
-                </p>
-            </div>
+           
         </div>
         <div
           className='home-second-row'>
