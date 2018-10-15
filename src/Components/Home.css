@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #2f2f2f
+    background-color: #2f2f2f;
+
 }
 
 
@@ -25,10 +26,11 @@
     line-height: 1.45em;
     font-weight: 700;
     letter-spacing: -2px;
+    margin: 0px;
     margin-bottom: .1em;
     width: 100%;
     text-shadow: 1px 1px 0 rgba(0,0,0.15);
-   font-family: MontSerrat,Tahoma,Arial,sans-serif;
+    font-family: MontSerrat,Tahoma,Arial,sans-serif;
 }
 .home-main-skills-row{
     width: 100%;
@@ -83,7 +85,7 @@
 
 .home-icon-button-main{
     height: 550px;
-    width: 45%;
+    width: 49.5%;
     padding: 0px;
 
     box-shadow: 1px 1px 0 rgba(0,0,0,.25);    
@@ -113,8 +115,8 @@
 }
 
 .home-icon-button{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     padding: 0px;
 
     box-shadow: 1px 1px 0 rgba(0,0,0,.25);    
@@ -127,9 +129,11 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    margin-right: 1%;
 }
 
 .home-icon-button:hover{
@@ -138,20 +142,47 @@
 
 .home-icon-title{
     padding: 0px;
+    margin: 0px;
+    margin-top: 3px;
     font-family: MontSerrat,Tahoma,Arial,sans-serif;
     font-weight: 700;
     font-size: 1em;
     color: #cacaca;
 }
 
-
-.home-second-row{
+.home-secondary-skills{
     height: 25%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+
+.home-secondary-row{
+    height: 25%;
+    width: 80%;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
-    border: 1px solid white;
+}
+.home-icon-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 0px;
+    margin: 0px;
+}
+.home-icon-attached{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100;
 }

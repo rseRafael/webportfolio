@@ -89,60 +89,176 @@ export default class Home extends Component {
            
         </div>
         <div
-          className='home-second-row'>
-            <div
-              className={'home-icon-button'}>
-                <i className="fab fa-node home-icon"></i>
-                <p
-                 className={"home-icon-title"}>
-                  {'Nodejs'}
-                </p>
+         className={"home-secondary-skills"}>
+          <h4
+             className="home-header">
+              Front-End Skills
+          </h4>
+          <div
+              className="home-main-frameworks">
+              <p
+               className="home-styled-paragraph">
+                {`JQuery`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`LESS`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`AJAX`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`BootStrap`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`Material-UI`}
+              </p>
+              <p
+               className={"home-styled-paragraph"}>
+                {`Fetch`}
+              </p>
             </div>
-            <div
+          <div
+            className='home-secondary-row'>
+              <div
+                className={'home-icon-button'}>
+                  <i 
+                   className="fab fa-html5 home-icon"></i>
+                  <p
+                  className={"home-icon-title"}>
+                    {'HTML'}
+                  </p>
+              </div>
+              <div
               className={'home-icon-button'}>
-                <i className="fab fa-java home-icon"></i>
+                <i 
+                 className="fab fa-css3-alt home-icon"></i>
+                <p
+                  className={"home-icon-title"}>
+                    {'CSS'}
+                  </p>
+              </div>
+              <div
+               className={'home-icon-button'}>
+                <i 
+                 className="fab fa-react home-icon"></i>
                 <p
                  className={"home-icon-title"}>
+                    {'React'}
+                </p>
+                <p
+                 className={"home-icon-title"}>
+                    {'&'}
+                </p>  
+                <p
+                 className={"home-icon-title"}>
+                    {'React Native'}
+                </p>  
+              </div>
+          </div>
+        </div>
+        <div
+         className={"home-secondary-skills"}>
+          <h4
+              className="home-header">
+              {`Other Technologies`}
+          </h4>
+          <div
+           className="home-main-frameworks">
+            <p
+              className="home-styled-paragraph">
+              {`Git`}
+            </p>
+            <p
+              className={"home-styled-paragraph"}>
+              {`Docker`}
+            </p>
+            <p
+              className={"home-styled-paragraph"}>
+              {`AWS`}
+            </p>
+            <p
+              className={"home-styled-paragraph"}>
+              {`Swagger`}
+            </p>
+          </div>
+        </div>
+        <div
+         className={"home-secondary-skills"}>
+          <h4
+              className="home-header">
+              {`Currently Studying`}
+          </h4>
+          <div
+           className='home-secondary-row'>
+
+            <div
+              className={'home-icon-button'}>
+                <i 
+                  className="fab fa-java home-icon"></i>
+
+                <p
+                  className={"home-icon-title"}>
                   {'Java'}
                 </p>
             </div>
+
             <div
               className={'home-icon-button'}>
-                <i className="fab fa-html5 home-icon"></i>
-                <p
-                 className={"home-icon-title"}>
-                  {'HTML'}
-                </p>
+              <i 
+                className="fab fa-cuttlefish home-icon"></i>
+              <p
+                className={"home-icon-title"}>
+                  {'C'}
+              </p>
             </div>
-            <div
-             className={'home-icon-button'}>
-               <i className="fab fa-css3-alt home-icon"></i>
-               <p
-                 className={"home-icon-title"}>
-                  {'CSS'}
-                </p>
-            </div>
-            <div
-             className={'home-icon-button'}>
-               <i className="fab fa-node home-icon"></i>
-               <p
-                 className={"home-icon-title"}>
-                  {'JQuery'}
-                </p>
-            </div>
-            <div
-             className={'home-icon-button'}>
-               <i className="fab fa-react home-icon"></i>
-               <p
-                 className={"home-icon-title"}>
-                  {'React and React Native'}
-                </p>
-            </div>
-            
-        </div>
 
+            <div
+              className={'home-icon-button'}>
+              <div
+               className={'home-icon-group'}>
+                <i 
+                  className="fab fa-cuttlefish home-icon"></i>
+                <i 
+                 className={"fas fa-plus"}>
+                </i>
+                <i 
+                 className={"fas fa-plus"}>
+                </i>
+              </div>
+            
+              <p
+                className={"home-icon-title"}>
+                  {'C++'}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
+/*
+<div
+ className={'home-icon-button'}>
+    <i 
+      className="fab fa-node home-icon"></i>
+    <p
+    className={"home-icon-title"}>
+      {'Nodejs'}
+    </p>
+</div>
+<div
+  className={'home-icon-button'}>
+    <i 
+      className="fab fa-java home-icon"></i>
+    <p
+    className={"home-icon-title"}>
+      {'Java'}
+    </p>
+</div>
+*/

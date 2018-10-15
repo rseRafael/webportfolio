@@ -3,13 +3,12 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from './Components/Home';
 import NavBar from './Components/NavBar';
-import CodeWriter from './Components/CodeWriter';
 import Slider from './Components/Slider';
-import myCode from './Utils/Codes';
+import About from './Components/About';
 
 const slider = (
       <Slider
-           components={[ <Home/>, <CodeWriter code={myCode}/>] }
+           components={[ <Home/>, <About/> ] }
           />
 )
 class App extends Component{

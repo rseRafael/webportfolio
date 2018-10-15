@@ -85,7 +85,7 @@ export default class CodeWriter extends Component{
             <div
              className={'codewriter-main-div'}>
                 <h4>
-                    {'import myowntools'}
+                    {this.props.language}
                 </h4>
                 <div
                  className={`codewriter-code-div`}>
