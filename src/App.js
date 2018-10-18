@@ -5,27 +5,36 @@ import Home from './Components/Home';
 import NavBar from './Components/NavBar';
 import Slider from './Components/Slider';
 import About from './Components/About';
+import StyledContact  from './Components/Contact';
 
-const slider = (
-      <Slider
-           components={[ <Home/>, <About/> ] }
-          />
-)
 class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-      mySlider: slider,
+      setting: false, 
+      navbar: null, 
+      slide: null, 
+      source: null,
+      activeIndex: 0, 
     }
   }
-  componentDidMount(){
+  componentDidUpdate(){
+    console.log("main App updated");
     /*
-    for (var prop in MySlider){
-      var type = typeof MySlider[prop];
-
-      console.log(type, prop, MySlider[prop]);
+    if(this.state.setting !== true){
+      this.state.slide.setState({
+        insideChange: false,
+      });
+    }
+    else{
+      console.log('setting');
+      console.log(this.state.slide);
+      console.log(this.state.navbar);
     }
     */
+  }
+  componentDidMount(){
+    console.log('STARTING: setting app');
   }
   
   render(){
@@ -35,15 +44,19 @@ class App extends Component{
         <div
          className={'app-navbar'}>
           <NavBar
+           service={ this }
             />
         </div>
         <div
          className={'app-slide'}>
           {
-            this.state.mySlider
+            <Slider
+            components={[ <Home/>, <About/>,  <StyledContact/>] }
+            service = { this }
+           />
           }
         </div>
-        
+
       </div>
     )
   }

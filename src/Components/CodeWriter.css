@@ -20,6 +20,38 @@
     color: #cacaca;
     display: inline;
 }
+
+@media screen and (max-width: 575px){
+    .codewriter-code-txt{
+        padding: 0px;
+        font-family: MontSerrat,Tahoma,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 8px;
+        color: #cacaca;
+        display: inline;
+    }
+}
+@media screen and (max-width: 420px){
+    .codewriter-code-txt{
+        padding: 0px;
+        font-family: MontSerrat,Tahoma,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 6px;
+        color: #cacaca;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .codewriter-code-txt{
+        padding: 0px;
+        font-family: MontSerrat,Tahoma,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 5px;
+        color: #cacaca;
+        display: inline;
+    }
+}
 .codewriter-code-div{
 
     width: 100%;

@@ -11,6 +11,7 @@
 
     background-color: #2f2f2f;
 
+
 }
 
 .about-content-div{
@@ -38,4 +39,26 @@
 
     padding: 0px;
     margin: 0px;
+}
+.about-steplabel-icon{
+    font-size: 2em;
+    color: #cacaca;
+}
+.about-header-paragraph{
+    color: #cacaca;
+    font-size: 1.5em;
+}
+.about-content-paragraph{
+    color: #cacaca;
+    font-size: 1em;
+}
+.about-button-next{
+    font-size: 1em;
+    color: #cacaca;
+    font-weight: 600;
+}
+.about-button-back{
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
 }

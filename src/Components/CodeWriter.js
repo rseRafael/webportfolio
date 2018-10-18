@@ -42,7 +42,6 @@ export default class CodeWriter extends Component{
                 ()=>{
                     if(this.state.listIndex < this.props.code.length){
                         let codeLine = this.props.code[this.state.listIndex];
-                        let txt  = '';
                         if(this.state.txtIndex < codeLine.length){
                             let breakLine = '';
                             if (this.state.txtIndex === codeLine.length - 1 &&
@@ -58,7 +57,6 @@ export default class CodeWriter extends Component{
                                     }
                                 </pre>
                             );
-                            let display = this.state.display             
                             this.setState({
                                 txtIndex: this.state.txtIndex + 1,
                                 code: newCode,

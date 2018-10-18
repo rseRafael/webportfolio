@@ -6,8 +6,10 @@ import myCode from '../Utils/Codes';
 export default class Home extends Component {
   constructor(props){
       super(props);
-      this['python-button'] = (
-        <div 
+
+      this.state= {
+        python: (
+          <div 
           className={'home-icon-button-div'}>
           <i className="fab fa-python home-icon"></i>
           <p
@@ -15,17 +17,12 @@ export default class Home extends Component {
             {'Python'}
           </p>
         </div>
-      );
-      this['python-code'] = (
-        <CodeWriter code={myCode} />
-      )
-      this.state= {
-        python: this['python-button'],
+        ),
       }
   }
   changePython(){
     this.setState({
-      python: this['python-code'],
+      python:( <CodeWriter code={myCode} /> ) ,
     })
   }
   render() {
@@ -39,32 +36,48 @@ export default class Home extends Component {
               Main Back-End Skills
             </h4>
             <div
-              className="home-main-frameworks">
-              <p
-               className="home-styled-paragraph">
-                {`Django`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`Expressjs`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`Nodejs`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`SQL`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`PostgreSQL`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`MongoDB`}
-              </p>
-            </div>
+              className={"home-skills-rows-div"}>
+              <div
+               className="home-additional-skills">
+                <p
+                className="home-styled-paragraph">
+                  {`Django`}
+                </p>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`Expressjs`}
+                </p>
+              </div>
+              <div
+               className={"home-additional-skills"}>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`Nodejs`}
+                </p>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`Jax-rs`}
+                </p>
+              </div>
+              <div
+                className="home-additional-skills">
+                <p
+                className={"home-styled-paragraph"}>
+                  {`SQL`}
+                </p>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`PostgreSQL`}
+                </p>
+              </div>
+              <div
+               className={"home-additional-skills"}>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`MongoDB`}
+                </p>
+              </div>
+             </div>
             <div
              className={"home-main-skills-row"}>
               <div
@@ -95,32 +108,48 @@ export default class Home extends Component {
               Front-End Skills
           </h4>
           <div
-              className="home-main-frameworks">
-              <p
-               className="home-styled-paragraph">
-                {`JQuery`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`LESS`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`AJAX`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`BootStrap`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`Material-UI`}
-              </p>
-              <p
-               className={"home-styled-paragraph"}>
-                {`Fetch`}
-              </p>
+              className={"home-skills-rows-div"}>
+            <div
+             className="home-additional-skills">
+                <p
+                className="home-styled-paragraph">
+                  {`Redux`}
+                </p>
+                <p
+                className="home-styled-paragraph">
+                  {`JQuery`}
+                </p>
             </div>
+            <div
+             className="home-additional-skills">
+                <p
+                className={"home-styled-paragraph"}>
+                  {`LESS`}
+                </p>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`AJAX`}
+                </p>
+            </div>
+            <div
+             className={"home-additional-skills"}>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`BootStrap`}
+                </p>
+                <p
+                className={"home-styled-paragraph"}>
+                  {`Material-UI`}
+                </p>
+            </div>
+            <div
+             className="home-additional-skills">
+                <p
+                className={"home-styled-paragraph"}>
+                  {`Fetch`}
+                </p>
+            </div>
+          </div>
           <div
             className='home-secondary-row'>
               <div
@@ -167,23 +196,29 @@ export default class Home extends Component {
               {`Other Technologies`}
           </h4>
           <div
-           className="home-main-frameworks">
-            <p
-              className="home-styled-paragraph">
-              {`Git`}
-            </p>
-            <p
-              className={"home-styled-paragraph"}>
-              {`Docker`}
-            </p>
-            <p
-              className={"home-styled-paragraph"}>
-              {`AWS`}
-            </p>
-            <p
-              className={"home-styled-paragraph"}>
-              {`Swagger`}
-            </p>
+           className={"home-skills-rows-div small"}>
+            <div
+            className="home-additional-skills">
+              <p
+                className="home-styled-paragraph">
+                {`Git`}
+              </p>
+              <p
+                className={"home-styled-paragraph"}>
+                {`Docker`}
+              </p>
+            </div>
+            <div
+            className={"home-additional-skills"}>
+              <p
+                className={"home-styled-paragraph"}>
+                {`AWS`}
+              </p>
+              <p
+                className={"home-styled-paragraph"}>
+                {`Swagger`}
+              </p>
+            </div>
           </div>
         </div>
         <div
